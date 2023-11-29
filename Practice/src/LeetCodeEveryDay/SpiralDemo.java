@@ -1,4 +1,4 @@
-package daily_dose;
+package LeetCodeEveryDay;
 
 public class SpiralDemo {
 

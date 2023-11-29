@@ -1,4 +1,4 @@
-package daily_dose;
+package LeetCodeEveryDay;
 
 import java.util.Arrays;
 import java.util.Scanner;

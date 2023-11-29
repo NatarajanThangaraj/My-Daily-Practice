@@ -1,4 +1,4 @@
-package daily_dose;
+package LeetCodeEveryDay;
 
 /*
  * You are at a fruit market with different types of exotic fruits on display.

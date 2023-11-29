@@ -1,4 +1,4 @@
-package daily_dose;
+package LeetCodeEveryDay;
 import java.util.ArrayList;
 
 public class BookingSystem {
