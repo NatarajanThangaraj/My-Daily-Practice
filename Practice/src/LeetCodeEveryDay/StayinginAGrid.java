@@ -1,9 +1,9 @@
 package LeetCodeEveryDay;
 
-public class RotateImage {
+public class StayinginAGrid {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 
 	}
 
