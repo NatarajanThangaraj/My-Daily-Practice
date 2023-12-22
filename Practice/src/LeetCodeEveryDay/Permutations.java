@@ -12,8 +12,8 @@ public class Permutations {
 	}
 
 	public List<List<Integer>> permute(int[] nums) {
-		List<List<Integer>> ans = new ArrayList();
-		List<Integer> temp = new ArrayList();
+		List<List<Integer>> ans = new ArrayList<>();
+		List<Integer> temp = new ArrayList<>();
 		boolean[] flag = new boolean[nums.length];
 		recure(nums, temp, ans, flag);
 		return ans;
@@ -21,7 +21,7 @@ public class Permutations {
 
 	private void recure(int[] nums, List<Integer> temp, List<List<Integer>> ans, boolean[] flag) {
 		if (temp.size() == nums.length) {
-			ans.add(new ArrayList(temp));
+			ans.add(new ArrayList<>(temp));
 			return;
 		}
 		for (int i = 0; i < nums.length; i++) {

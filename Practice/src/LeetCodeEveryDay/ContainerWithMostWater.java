@@ -32,6 +32,7 @@ public class ContainerWithMostWater {
 				i++;
 			}else {
 				j--;
+				
 			}
 		}
 		return maxcapacity; 
