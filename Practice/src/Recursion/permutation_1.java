@@ -7,15 +7,16 @@ public class permutation_1 {
 		permutat(str.toCharArray(), 0);
 	}
 
-	static void permutat(char arr[], int fi) {
+	static void permutat(char arr[], int fixedPoint) {
 
-		if (fi == arr.length - 1) {
+		if (fixedPoint == arr.length - 1) {
 			System.out.println(arr);
+			return ;
 		}
-		for (int i = fi; i < arr.length; i++) {
-			swap(arr, i, fi);
-			permutat(arr, fi + 1);
-			swap(arr, i, fi);
+		for (int i = fixedPoint; i < arr.length; i++) {
+			swap(arr, i, fixedPoint);
+			permutat(arr, fixedPoint + 1);
+			swap(arr, i, fixedPoint);
 		}
 
 	}

@@ -1,4 +1,4 @@
-package projecteuler;
+package algorithemicProblems;
 
 import java.util.Scanner;
 

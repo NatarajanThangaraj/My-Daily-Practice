@@ -18,7 +18,7 @@ public class FindZArray {
 	}
 
 	private List<Integer> getZlist(int[][] matrix, int x, int y) {
-		List<Integer> ans = new ArrayList();
+		List<Integer> ans = new ArrayList<>();
 		while (y < matrix[0].length) {
 
 			ans.add(matrix[x][y]);
