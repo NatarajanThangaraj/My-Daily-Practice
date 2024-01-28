@@ -1,6 +1,7 @@
 package LeetCodeEveryDay;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 /*The next permutation of an array of integers is the next lexicographically greater permutation of its integer. 
  * More formally, if all the permutations of the array are sorted in one container according to their lexicographical order, 
@@ -11,24 +12,11 @@ public class NextPermutation {
 	public static void main(String[] args) {
 		NextPermutation next=new NextPermutation();
 		int[] arr= {1,3,2};
-		next.nextPermutation(arr);
+		List<int[]>list=new ArrayList<>();
+//		for(int i=0;i<arr.length;i++) {
+//		//next.nextPermutation(list,arr);
 	}
 	 public void nextPermutation(int[] nums) {
-		 int temp=0;
-		 boolean flag=false;
-	        for(int i=nums.length-1;i>0;i--) {
-	        	if(nums[i-1]<nums[i]) {
-	        		temp=nums[i-1];
-	        		nums[i-1]=nums[i];
-	        		nums[i]=temp;
-	        		flag=true;
-	        		break;
-	        	}
-	        }
-	        if(!flag) {
-	        	Arrays.sort(nums);
-	        }
-	        System.out.println(Arrays.toString(nums));
-	    }
+	 }
 
 }
