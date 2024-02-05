@@ -25,7 +25,7 @@ public class SnakeAndLadderViewModel {
 						slView.ladderClimb(player, result);
 						return;
 					} else {
-						player.setCurrentPosition(player.getCurrentPosition()-result);
+						player.setPrev(player.getCurrentPosition()-result);
 						slView.normalMove(player, result);
 						return;
 					}

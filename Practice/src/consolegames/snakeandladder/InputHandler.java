@@ -149,7 +149,7 @@ public class InputHandler {
 	void display(int[][] mat) {
 		for(int i=0;i<mat.length;i++) {
 			for(int j=0;j<mat.length;j++) {
-				System.out.printf("%3d",mat[i][j]);
+				System.out.printf("%6d",mat[i][j]);
 			}
 			System.out.println();
 		}
