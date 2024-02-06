@@ -1,6 +1,8 @@
 package consolegames.snakeandladder;
 
+import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Scanner;
 
 import consolegames.snakeandladder.dto.Cell;
 import consolegames.snakeandladder.dto.Player;
@@ -9,16 +11,16 @@ public class SnakeAndLadderView {
 	SnakeAndLadderViewModel slViewModel;
 	Cell[][] board;
 	List<Player> playerList;
-
+	Scanner scan=new Scanner(System.in);
 	SnakeAndLadderView() {
 		InputHandler input = new InputHandler();
-		slViewModel = new SnakeAndLadderViewModel(this);
 		board = input.getBoard();
-		display(board);
 		playerList = input.players();
+		slViewModel = new SnakeAndLadderViewModel(this,board);
+		display(board);
 	}
 
-	void letsStart() {
+	void startToPlay() {
 		Player player;
 		int destination = board.length * board.length;
 		System.out.println("\n\t\t LETS PLAY ! \t\t\n");
@@ -70,9 +72,30 @@ public class SnakeAndLadderView {
 				+ " -> " + player.getCurrentPosition() + " \n");
 	}
 
-	public static void main(String[] args) {
-		SnakeAndLadderView obj = new SnakeAndLadderView();
-		obj.letsStart();
+	public void showFeatures() {
+		System.out.println("\n  Hey can we play ! \n");
+		System.out.println(" 1.  to Play     ");
+		System.out.println(" 2.  to find minimum rolling to win\n");
+		System.out.print("  Enter Your Choice : ");
+		slViewModel.selectedFeature(getInteger());
+		
 	}
+	public int getInteger() {
+		while(true) {
+			try {
+		int n=scan.nextInt();
+		return n;
+			}catch(InputMismatchException e) {
+				System.out.print("Please Enter correct number : ");
+			}
+		}
+	}
+
+	public void findMinRoll() {
+		System.out.print(" This is the minimum value to win : "+slViewModel.breadthFirstSearch(board));
+		 
+	}
+
+	
 
 }
