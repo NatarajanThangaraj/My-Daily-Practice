@@ -4,6 +4,7 @@ Return the sorted string. If there are multiple answers, return any of them.
 Output: "eert"
 Explanation: 'e' appears twice while 'r' and 't' both appear once.
 So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.*/
+package algorithemicProblems;
 
 import java.util.ArrayList;
 import java.util.Collections;

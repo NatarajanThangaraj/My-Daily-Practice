@@ -3,6 +3,7 @@
  * startPos = [0,1],
  *  s = "RRDDLU"
 Output: [1,5,4,3,1,0]*/
+package algorithemicProblems;
 
 import java.util.Arrays;
 

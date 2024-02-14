@@ -14,6 +14,8 @@ The metal garbage truck takes 7 minutes to pick up all the metal garbage.
 The paper garbage truck takes 15 minutes to pick up all the paper garbage.
 The glass garbage truck takes 15 minutes to pick up all the glass garbage.
 It takes a total of 7 + 15 + 15 = 37 minutes to collect all the garbage.*/
+package algorithemicProblems;
+
 public class CollectCarbage {
 
 	public static void main(String[] args) {

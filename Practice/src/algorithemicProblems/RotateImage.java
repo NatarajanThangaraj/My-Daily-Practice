@@ -1,3 +1,4 @@
+package algorithemicProblems;
 
 public class RotateImage {
 
