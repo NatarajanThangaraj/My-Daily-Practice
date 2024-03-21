@@ -1,4 +1,4 @@
-package breadthfirstsearch;
+package BFS_and_DFS;
 
 public class UniquePaths {
 

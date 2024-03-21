@@ -1,13 +1,16 @@
-package breadthfirstsearch;
+package BFS_and_DFS;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-/*To perform a flood fill, consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel, plus any pixels connected 4-directionally to those pixels (also with the same color), and so on. 
+/*To perform a flood fill, consider the starting pixel, plus any pixels connected 4-directionally to the starting pixel of the same color as the starting pixel,
+ *  plus any pixels connected 4-directionally to those pixels (also with the same color), and so on. 
  * Replace the color of all of the aforementioned pixels with color.*/
 public class FloodsFill {
 	public static void main(String[] args) {
-		int[][] image = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
+		int[][] image = { { 1, 1, 1 },
+				          { 1, 1, 0 },
+				          { 1, 0, 1 } };
 		int sr = 1, sc = 1, color = 2;
 		int[][] matrix =new FloodsFill(). floodFill(image, sr, sc, color);
 		for (int i = 0; i < matrix.length; i++) {
